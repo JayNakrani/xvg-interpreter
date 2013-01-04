@@ -1,0 +1,10 @@
+<xvg version="versionValue">
+	<circle r="60" x="200" y="100" color="5">
+	<rect top="60" bottom="30" left="90" right="300" color="2">
+	<line x1="600" y1="60" x2="30" y2="30" color="3">
+	<point x="50" y="60" color="9">
+	<point x="50" y="61" color="9">
+	<point x="50" y="62" color="9">
+	<point x="50" y="63" color="9">
+	<rect top="160" bottom="300" left="80" right="340" color="46">
+</xvg>

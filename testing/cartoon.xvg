@@ -1,0 +1,7 @@
+<xvg version="1.0">
+	<circle x="100" y="100" r="50" color="5" comment="Head meain circle">
+	<circle x="60" y="75" r="10" color="5" comment="Left eye">
+	<circle x="80" y="75" r="10" color="5" comment="Left eye">
+	<line x1="70" y1="145" x2="70" y2="180" color="2" remark="left line for neck">
+	<line x1="130" y1="145" x2="130" y2="180" color="2" remark="right line for neck">
+</xvg>
