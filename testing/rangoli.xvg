@@ -1,9 +1,8 @@
-<xvg version="1.0">
-	<circle color="3" x="250" y="250" r="125" >
-	<circle color="1" x="200" y="300" r="50" >
+<xvg version="1.0" bgColor="1">
+	<circle color="12" x="250" y="250" r="125">
+	<circle color="14" x="200" y="300" r="50">
 	<circle color="3" x="300" y="200" r="50">
 	<circle color="4" x="200" y="200" r="50">
-	<circle color="5" x="300" y="300" r="50" >
-	<rect bottom="300" top="200" left="200" right="300" color="9">
-	<circle color="10" x="50" y="50" r="50" >
+	<circle color="5" x="300" y="300" r="50">
+	<rect bottom="300" top="200" left="200" right="300" color="127">
 </xvg>

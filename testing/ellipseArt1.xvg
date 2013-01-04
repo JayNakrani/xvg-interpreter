@@ -1,0 +1,53 @@
+<xvg version="1.0" color="13" bgColor="10" haha="haha">
+	<ellipse x="300" y="250" rx="300" ry="270" start="0" end="355" color="1" >
+	<ellipse x="300" y="250" rx="295" ry="265" start="5" end="360" >
+	<ellipse x="300" y="250" rx="290" ry="260" start="10" end="365" >
+	<ellipse x="300" y="250" rx="285" ry="255" start="15" end="370" >
+	<ellipse x="300" y="250" rx="280" ry="250" start="20" end="375" >
+	<ellipse x="300" y="250" rx="275" ry="245" start="25" end="380" >
+	<ellipse x="300" y="250" rx="270" ry="240" start="30" end="385" color="1">
+	<ellipse x="300" y="250" rx="265" ry="235" start="35" end="390" >
+	<ellipse x="300" y="250" rx="260" ry="230" start="40" end="395" >
+	<ellipse x="300" y="250" rx="255" ry="225" start="45" end="400" >
+	<ellipse x="300" y="250" rx="250" ry="220" start="50" end="405" >
+	<ellipse x="300" y="250" rx="245" ry="215" start="55" end="410" >
+	<ellipse x="300" y="250" rx="240" ry="210" start="60" end="415" >
+	<ellipse x="300" y="250" rx="235" ry="205" start="65" end="420" color="1">
+	<ellipse x="300" y="250" rx="230" ry="200" start="70" end="425" >
+	<ellipse x="300" y="250" rx="225" ry="195" start="75" end="430" >
+	<ellipse x="300" y="250" rx="220" ry="190" start="80" end="435" >
+	<ellipse x="300" y="250" rx="215" ry="185" start="85" end="440" >
+	<ellipse x="300" y="250" rx="210" ry="180" start="90" end="445" color="1">
+	<ellipse x="300" y="250" rx="205" ry="175" start="95" end="450" >
+	<ellipse x="300" y="250" rx="200" ry="170" start="100" end="455" >
+	<ellipse x="300" y="250" rx="195" ry="165" start="105" end="460" >
+	<ellipse x="300" y="250" rx="190" ry="160" start="110" end="465" >
+	<ellipse x="300" y="250" rx="185" ry="155" start="115" end="470" color="1">
+	
+	<ellipse x="300" y="250" rx="180" ry="150" start="120" end="475" >
+	<ellipse x="300" y="250" rx="185" ry="145" start="125" end="480" >
+	<ellipse x="300" y="250" rx="180" ry="140" start="130" end="485" >
+	<ellipse x="300" y="250" rx="175" ry="135" start="135" end="490" >
+	<ellipse x="300" y="250" rx="170" ry="130" start="140" end="495" >
+	<ellipse x="300" y="250" rx="165" ry="125" start="145" end="500" color="1">
+	<ellipse x="300" y="250" rx="160" ry="120" start="150" end="505" >
+	<ellipse x="300" y="250" rx="155" ry="115" start="155" end="510" >
+	<ellipse x="300" y="250" rx="150" ry="110" start="160" end="515" >
+	<ellipse x="300" y="250" rx="145" ry="105" start="165" end="520" >
+	<ellipse x="300" y="250" rx="140" ry="100" start="170" end="525" color="1">
+	<ellipse x="300" y="250" rx="135" ry="95" start="175" end="530" >
+	<ellipse x="300" y="250" rx="130" ry="90" start="180" end="535" >
+	<ellipse x="300" y="250" rx="125" ry="85" start="185" end="540" >
+	<ellipse x="300" y="250" rx="120" ry="80" start="190" end="545"  color="1">
+	<ellipse x="300" y="250" rx="115" ry="75" start="195" end="550" >
+	<ellipse x="300" y="250" rx="110" ry="70" start="200" end="555" >
+	<ellipse x="300" y="250" rx="105" ry="65" start="205" end="560" >
+	<ellipse x="300" y="250" rx="100" ry="60" start="210" end="565" >
+	<ellipse x="300" y="250" rx="95" ry="55" start="215" end="570" color="1">
+	<ellipse x="300" y="250" rx="90" ry="50" start="220" end="575" >
+	<ellipse x="300" y="250" rx="95" ry="45" start="225" end="580" >
+	<ellipse x="300" y="250" rx="90" ry="40" start="230" end="585" >
+	<ellipse x="300" y="250" rx="85" ry="35" start="235" end="590" >
+	
+	<circle x="300" y="250" r="35" ry="35" start="235" end="590" color="4">
+</xvg>

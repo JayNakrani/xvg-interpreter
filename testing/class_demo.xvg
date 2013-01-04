@@ -1,0 +1,8 @@
+<xvg version="1.0" color="12" bgColor="8">
+	<circle r="100" x="100" y="200">
+	<line x1="20" y1="30" x2="30" y2="100" color="4">
+	<rect top="100" bottom="300" right="400" left="100" color="9">
+	<ellipse x="100" y="300" rx="100" ry="200" start="0" end="300">
+	<point x="10" y="20" color="14">
+	<haha x="11" y="20" color="14">
+</xvg>

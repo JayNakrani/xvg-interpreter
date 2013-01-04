@@ -1,0 +1,28 @@
+<xvg version="1.0">
+	<ellipse x="300" y="250" rx="300" ry="200" start="0" end="360" color="9">
+	<circle x="300" y="250" r="300" color="4">
+	
+	<ellipse x="300" y="250" rx="150" ry="200" start="0" end="360" color="9">
+	<circle x="300" y="250" r="200" color="4">
+	
+	<ellipse x="300" y="250" rx="150" ry="100" start="0" end="360" color="9">
+	<circle x="300" y="250" r="150" color="4">
+	
+	<ellipse x="300" y="250" rx="75" ry="100" start="0" end="360" color="9">
+	<circle x="300" y="250" r="100" color="4">
+	
+	<ellipse x="300" y="250" rx="75" ry="50" start="0" end="360" color="9">
+	<circle x="300" y="250" r="75" color="4">
+	
+	<ellipse x="300" y="250" rx="37.5" ry="50" start="0" end="360" color="9">
+	<circle x="300" y="250" r="50" color="4">
+	
+	<ellipse x="300" y="250" rx="37.5" ry="25" start="0" end="360" color="9">
+	<circle x="300" y="250" r="37.5" color="4">
+	
+	<ellipse x="300" y="250" rx="37.5" ry="12.5" start="0" end="360" color="9">
+	<circle x="300" y="250" r="25" color="4">
+	
+	<ellipse x="300" y="250" rx="18.25" ry="12.5" start="0" end="360" color="9">
+	<circle x="300" y="250" r="12.5" color="4">
+</xvg>
