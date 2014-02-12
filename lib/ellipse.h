@@ -1,13 +1,10 @@
-#ifndef _CONFIG_
-	#include "lib/config.h"
-	#define _CONFIG_ 0
-#endif
-#ifndef _POINT_
-	#include "lib/point.h"
-	#define _POINT_ 0
-#endif
-
+#ifndef _ELLIPSE_
 #define _ELLIPSE_ 0
+
+#include "config.h"
+#include "point.h"
+
+using namespace std;
 
 class c_ellipse
 {
@@ -33,9 +30,11 @@ class c_ellipse
 		}
 		void draw(void);
 };
+
 void c_ellipse::draw(void)
 {
-
 	setcolor(color);
 	ellipse(c.x,c.y,startAngle,endAngle,rx,ry);
 }
+
+#endif

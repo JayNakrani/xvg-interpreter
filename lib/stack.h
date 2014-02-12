@@ -18,12 +18,12 @@ Description	:
 		dump
 			Dumps the stack object.
 */
-#ifndef _CONFIG_
-	#include "lib/config.h"
-	#define _CONFIG_ 0
-#endif
 
+#ifndef _STACK_
 #define _STACK_ 0
+
+#include "config.h"
+using namespace std;
 class c_stack
 {
 	//charcter stack
@@ -76,3 +76,5 @@ void c_stack::dump(void)
 	}
 	cout<<"\n::::::::::::::::::::Dumping over::::::::::::::::::::\n";
 }
+
+#endif

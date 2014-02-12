@@ -1,10 +1,9 @@
-#ifndef _CONFIG_
-	#include "lib/config.h"
-	#define _CONFIG_ 0
-#endif
-
+#ifndef _POINT_
 #define _POINT_ 0
- 
+
+#include "config.h"
+using namespace std; 
+
 class c_point
 {
 public:
@@ -66,3 +65,5 @@ void c_point::dump(void)
 	cout<<"x:"<<x<<"\ty"<<y<<"\tcolor:"<<color;
 	cout<<"\n:::::::::::::::::::::Over::::::::::::::::::::::\n";
 }
+
+#endif

@@ -1,13 +1,11 @@
-#ifndef _CONFIG_
-	#include "lib/config.h"
-	#define _CONFIG_ 0
-#endif
-#ifndef _POINT_
-	#include "lib/point.h"
-	#define _POINT_ 0
-#endif
-
+#ifndef _RECT_
 #define _RECT_ 0
+
+#include "config.h"
+#include "point.h"
+
+using namespace std;
+
 class c_rect
 {
 	public:
@@ -42,3 +40,5 @@ void c_rect::draw(void)
 	//right edge
 	line(right,top,right,bottom);	
 }
+
+#endif

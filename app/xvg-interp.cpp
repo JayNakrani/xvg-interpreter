@@ -1,6 +1,8 @@
-#include "lib/tag.h"
-#include "lib/general.h"
-#define MAX 1000
+#include "../lib/tag.h"
+#include "../lib/common.h"
+#define MAXIMUM 1000
+
+using namespace std;
 
 /*flags
 statusFlag
@@ -17,7 +19,7 @@ statusFlag
 */
 int main(int argC, char *argV[])
 {
-	c_stack endSymbStack(MAX);
+	c_stack endSymbStack(MAXIMUM);
 	c_tag tag;
 	usint  statusFlag=0;
 	ifstream iFile;
@@ -47,7 +49,7 @@ int main(int argC, char *argV[])
 		cout<<"\nError::Could not open target file";
 		exit(1);
 	}*/
-	clrscr();
+	
 	initG();
 	while(!iFile.eof())
 	{

@@ -1,33 +1,33 @@
-/*
-Author 		: dj
-DateTime	: 22-10-2012 22:08
-Description	:
-	This header file is for tags. All xvg tags can have diifferent different attributes and values. This header file declares a class 'c_tag' that wraps around all the functionalities of it.
-	c_tag
-	Properties:
-		tagName: Holds the string of tag name.
-		attribute: Array that holds attribute names
-		attributeValue:Array that holds attribute values.
-		attributeCount:unsigned int indicating number of attributes.
-	Functions:
-		giveValue(attributeName,valueStr)
-			Gives value in valueStr corrosponding to the 'attributeName'.
-			If value not found then assigns "\0".
-		dump()
-			Dumps the object.
-*/
+/**
+ *
+ * Author 		: dj
+ * DateTime		: 22-10-2012 22:08
+ * Description	:
+ *	This header file is for tags. All xvg tags can have diifferent different attributes and values. This header file declares a class 'c_tag' that wraps around all the functionalities of it.
+ *	c_tag
+ *	Properties:
+ *		tagName: Holds the string of tag name.
+ *		attribute: Array that holds attribute names
+ *		attributeValue:Array that holds attribute values.
+ *		attributeCount:unsigned int indicating number of attributes.
+ *	Functions:
+ *		giveValue(attributeName,valueStr)
+ *			Gives value in valueStr corrosponding to the 'attributeName'.
+ *			If value not found then assigns "\0".
+ *		dump()
+ *			Dumps the object.
+ */
 
-/*#include <iostream.h>
-#include <string.h>
-#include <conio.h>
-#include <stdlib.h>
-#include <fstream.h>*/
-#ifndef _CONFIG_
-	#include "lib/config.h"
-	#define _CONFIG_ 0
-#endif
-
+#ifndef _TAG_
 #define _TAG_ 0
+
+#include "config.h"
+#include "point.h"	
+#include "line.h"
+#include "rect.h"
+#include "circle.h"
+#include "ellipse.h"
+
 #define MAX_LEN 20
 class c_tag
 {
@@ -90,3 +90,6 @@ void c_tag::reinit(void)
 	**attributeValue='\0';
 	attributeCount=0;
 }
+
+#endif
+

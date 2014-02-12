@@ -1,14 +1,9 @@
-#ifndef _CONFIG_
-	#include "lib/config.h"
-	#define _CONFIG_ 0
-#endif
-#ifndef _POINT_
-	#include "lib/point.h"
-	#define _POINT_ 0
-#endif
-
+#ifndef _LINE_
 #define _LINE_ 0
 
+#include "config.h"
+#include "point.h"
+using namespace std;
 
 class c_line
 {
@@ -43,3 +38,5 @@ void c_line::draw(void)
 	setcolor(color);
 	line(p1.x,p1.y,p2.x,p2.y);
 }
+
+#endif
