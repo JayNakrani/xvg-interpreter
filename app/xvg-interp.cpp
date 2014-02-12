@@ -1,6 +1,5 @@
 #include "../lib/tag.h"
 #include "../lib/common.h"
-#define MAXIMUM 1000
 
 using namespace std;
 
@@ -44,11 +43,11 @@ int main(int argC, char *argV[])
 	timeinfo = localtime ( &rawtime );
 	oFile<<"\nStarting time:"<<asctime(timeinfo)<<"\t(in milliseconds from 1st January,1971 : "<<rawtime<<")";
 	
-	/*if(!iFile.is_open())
+	if(!iFile.is_open())
 	{
 		cout<<"\nError::Could not open target file";
 		exit(1);
-	}*/
+	}
 	
 	initG();
 	while(!iFile.eof())

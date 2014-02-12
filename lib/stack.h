@@ -22,6 +22,8 @@ Description	:
 #ifndef _STACK_
 #define _STACK_ 0
 
+#define MAX_SIZE 1000
+
 #include "config.h"
 using namespace std;
 class c_stack
@@ -34,6 +36,7 @@ class c_stack
 	public:
 		c_stack(int x)
 		{
+			ch= new char[MAX_SIZE];
 			max=x;
 			top=-1;
 		}

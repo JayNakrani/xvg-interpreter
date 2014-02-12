@@ -9,6 +9,9 @@
 #include "ellipse.h"
 #include "tag.h"
 #include "stack.h"
+
+#define MAXIMUM 1000
+
 using namespace std;
 
 //global params for whole xvg drawing
