@@ -43,9 +43,8 @@ int main(int argC, char *argV[])
 		cin>>argV[1];
 	}
 
-
+	iFile.open(argV[1],ios::in);
 	#ifdef _DEBUG_FLAG_	
-		iFile.open(argV[1],ios::in);
 		oFile.open("log/log.txt",ios::out|ios::ate);
 		oFile<<"\n----------------------------------------------------------------------------------------------\n";
 		oFile<<"\nFile:"<<argV[1];

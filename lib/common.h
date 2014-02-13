@@ -437,7 +437,9 @@ void initG(void)
 		if(*strValue!='\0')
 		{
 			//displaying the version on the top-right corner of the window
-			*oFile<<"\n\t\tVersion:"<<strValue;
+			#ifdef _DEBUG_FLAG_
+				*oFile<<"\n\t\tVersion:"<<strValue;
+			#endif
 			if(bgCol==getcolor())
 				setcolor(bgCol+1);
 			sprintf(tmpStr,"Version:%s",strValue);
