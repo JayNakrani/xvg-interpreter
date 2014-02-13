@@ -12,15 +12,15 @@ public:
 	uint color; 
 	c_point(uint a, uint b,uint clr=0)
 	{
-		this->x=a;
-		this->y=b;
-		color=clr;
+		this->x = a;
+		this->y = b;
+		color = clr;
 	}
 	c_point()
 	{
-		this->x=0;
-		this->y=0;
-		this->color=0;
+		this->x = 0;
+		this->y = 0;
+		this->color = 0;
 	}
 	~c_point()
 	{
@@ -44,16 +44,16 @@ uint c_point::getY(void)
 }
 void c_point::setX(uint a)
 {
-	this->x=a;
+	this->x = a;
 }
 void c_point::setY(uint a)
 {
-	this->y=a;
+	this->y = a;
 }
 void c_point::shiftOrigin(void)
 {
-	this->x+=(int(float(getmaxx())/2.0));
-	this->y=(int(float(getmaxy())/2.0))-(this->y);
+	this->x += (int(float(getmaxx())/2.0));
+	this->y = (int(float(getmaxy())/2.0))-(this->y);
 }
 void c_point::draw(void)
 {
@@ -61,9 +61,9 @@ void c_point::draw(void)
 }
 void c_point::dump(void)
 {
-	cout<<"\n::::::::::::::::::::Dumping::::::::::::::::::::\n";
-	cout<<"x:"<<x<<"\ty"<<y<<"\tcolor:"<<color;
-	cout<<"\n:::::::::::::::::::::Over::::::::::::::::::::::\n";
+	cout << "\n::::::::::::::::::::Dumping::::::::::::::::::::\n";
+	cout << "x:" << x << "\ty" << y << "\tcolor:" << color;
+	cout << "\n:::::::::::::::::::::Over::::::::::::::::::::::\n";
 }
 
 #endif

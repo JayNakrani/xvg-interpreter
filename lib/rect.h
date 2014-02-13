@@ -20,11 +20,11 @@ class c_rect
 		}
 		c_rect(uint t,uint b, uint l, uint r,uint clr)
 		{
-			top=t;
-			bottom=b;
-			left=l;
-			right=r;
-			color=clr;
+			top = t;
+			bottom = b;
+			left = l;
+			right = r;
+			color = clr;
 		}
 		void draw(void);
 };

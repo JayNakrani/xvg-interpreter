@@ -13,16 +13,16 @@ class c_circle
 		uint color;
 		c_circle(c_point x,uint h,uint clr=0)
 		{
-			c=x;
-			r=h;
-			color=clr;
+			c = x;
+			r = h;
+			color = clr;
 		}
 		c_circle(void)
 		{
-			c.x=0;
-			c.y=0;
-			r=0;
-			color=0;
+			c.x = 0;
+			c.y = 0;
+			r = 0;
+			color = 0;
 		}
 		~c_circle()
 		{
@@ -44,7 +44,7 @@ void c_circle::setCenter(int x,int y)
 void c_circle::setRadius(uint x)
 {
 	r=x;
-	cout<<c.getX()<<"  "<<c.getY();
+	cout << c.getX() << "  " << c.getY();
 }
 uint c_circle::getRadius(void)
 {
@@ -62,9 +62,9 @@ uint c_circle::draw(void)
 }
 void c_circle::dump(void)
 {
-	cout<<"\n::::::::::::::::::::Dumping::::::::::::::::::::\n";
-	cout<<"x:"<<c.x<<"\ty"<<c.y<<"\tr:"<<r<<"\tcolor:"<<color;
-	cout<<"\n:::::::::::::::::::::Over::::::::::::::::::::::\n";
+	cout << "\n::::::::::::::::::::Dumping::::::::::::::::::::\n";
+	cout << "x:" << c.x << "\ty" << c.y<< "\tr:" << r << "\tcolor:" << color;
+	cout << "\n:::::::::::::::::::::Over::::::::::::::::::::::\n";
 }
 
 #endif

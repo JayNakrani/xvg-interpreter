@@ -15,15 +15,15 @@ class c_ellipse
 		uint startAngle;
 		uint endAngle;
 		uint color;
-		c_ellipse(uint x=0,uint y=0, uint stAngle=0,uint endAngle=0,uint xR=0, uint yR=0,uint clr=0)
+		c_ellipse(uint x = 0,uint y = 0, uint stAngle = 0,uint endAngle = 0,uint xR = 0, uint yR = 0,uint clr = 0)
 		{
-			c.x=x;
-			c.y=y;
-			rx=xR;
-			ry=yR;
-			startAngle=stAngle;
-			endAngle=endAngle;
-			color=clr;
+			c.x = x;
+			c.y = y;
+			rx = xR;
+			ry = yR;
+			startAngle = stAngle;
+			endAngle = endAngle;
+			color = clr;
 		}
 		~c_ellipse()
 		{

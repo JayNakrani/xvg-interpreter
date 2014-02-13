@@ -13,18 +13,18 @@ class c_line
 		uint color;
 		c_line()
 		{
-			p1.x=0;
-			p1.y=0;
-			p2.x=0;
-			p2.y=0;
+			p1.x = 0;
+			p1.y = 0;
+			p2.x = 0;
+			p2.y = 0;
 		}
-		c_line(uint x1,uint y1, uint x2, uint y2,uint clr=0)
+		c_line(uint x1, uint y1, uint x2, uint y2, uint clr = 0)
 		{
-			p1.x=x1;
-			p1.y=y1;
-			p2.x=x2;
-			p2.y=y2;
-			color=clr;
+			p1.x = x1;
+			p1.y = y1;
+			p2.x = x2;
+			p2.y = y2;
+			color = clr;
 		}
 		~c_line()
 		{

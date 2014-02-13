@@ -11,7 +11,7 @@
 #include <time.h>
 
 /* For debugging. To stop debugging just comment following line. */
-#define _DEBUG_FLAG_ 0
+// #define _DEBUG_FLAG_ 0
 
 typedef unsigned int uint;
 typedef unsigned short int usint;

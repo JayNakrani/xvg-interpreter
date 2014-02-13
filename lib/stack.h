@@ -1,23 +1,23 @@
-/*
-Author 		: dj
-DateTime	: 14-10-2012 10:02
-Description	:
-	This header file wraps the functionality of "character" stack.
-	c_stack
-	Properties:
-		ch: pointer to char.
-		top:points to top of the stack.
-		max:maximum length of stack.
-	Functions:
-		c_stack(x)
-			Constructor that creates a stack of x length.
-		push
-			Pushes the character specified.
-		pop
-			Pops the top character.
-		dump
-			Dumps the stack object.
-*/
+/**
+ * Author 		: dj
+ * DateTime		: 14-10-2012 10:02
+ * Description	:
+ *	This header file wraps the functionality of "character" stack.
+ *	c_stack
+ *	Properties:
+ *		ch: pointer to char.
+ *		top:points to top of the stack.
+ *		max:maximum length of stack.
+ *	Functions:
+ *		c_stack(x)
+ *			Constructor that creates a stack of x length.
+ *		push
+ *			Pushes the character specified.
+ *		pop
+ *			Pops the top character.
+ *		dump
+ *			Dumps the stack object.
+ */
 
 #ifndef _STACK_
 #define _STACK_ 0
@@ -36,10 +36,10 @@ class c_stack
 	public:
 		c_stack(int x)
 		{
-			ch= new char[MAX_SIZE];
+			ch = new char[MAX_SIZE];
 			memset(ch, (int)'#',MAX_SIZE);
-			max=x;
-			top=-1;
+			max = x;
+			top = -1;
 		}
 		~c_stack(void)
 		{
@@ -52,7 +52,7 @@ class c_stack
 };
 int c_stack::push(char x)
 		{
-			if(top>=max)
+			if( top >= max )
 			{
 				//stack overflow
 				return(-1);
@@ -63,7 +63,7 @@ int c_stack::push(char x)
 		}
 char c_stack::pop(void)
 {
-		if(top<0)
+		if( top < 0 )
 		{
 			//stack underflow
 			return('\0');
@@ -75,11 +75,11 @@ void c_stack::dump(void)
 {
 	cout << "\n::::::::::::::::::::Dumping stack::::::::::::::::::::\n";
 	cout << "\ttop:" << top << "\tmax" << max << "\n" ;
-	for(int i=0;i<=top;i++)
+	for(int i = 0; i <= top; i++)
 	{
 		cout << ch[i] <<"\n";
 	}
-	cout<<"\n::::::::::::::::::::Dumping over::::::::::::::::::::\n";
+	cout << "\n::::::::::::::::::::Dumping over::::::::::::::::::::\n";
 }
 
 #endif

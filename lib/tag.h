@@ -50,23 +50,22 @@ class c_tag
 
 void c_tag::giveValue(char *attributeName,char *value)
 {
-	if(tagName=='\0')
+	if(tagName == '\0')
 	{
 		cout<<"uninitilized tagName";
 		getch();
 	}
-	uint i=0,valueSetFlag=0;
-	for(i=0;i<attributeCount;i++)
+	uint i = 0 ,valueSetFlag = 0;
+	for(i=0 ; i < attributeCount; i++)
 	{
 		//cout<<"\narg:"<<attributeName<<"localValue"<<attribute[i];
-		if(strcmp(attributeName,attribute[i])==0)
+		if(strcmp(attributeName,attribute[i]) == 0)
 		{
 			strcpy(value,attributeValue[i]);
-			valueSetFlag=1;			//setting the flag
+			valueSetFlag = 1;			//setting the flag
 		}
 	}
-	//cout<<"\n\nvalue:"<<value<<"flag"<<valueSetFlag;
-	if(valueSetFlag!=1)
+	if(valueSetFlag != 1)
 	{
 		//value not found..!!
 		strcpy(value,"\0");
@@ -75,9 +74,9 @@ void c_tag::giveValue(char *attributeName,char *value)
 
 void c_tag::dump(void)
 {
-	uint i=0;
-	cout<<"\n::::::::::::::::::::Dumping::::::::::::::::::::\ntagName:"<<tagName;
-	for(i=0;i<attributeCount;i++)
+	uint i = 0;
+	cout << "\n::::::::::::::::::::Dumping::::::::::::::::::::\ntagName:" << tagName;
+	for(i = 0;i < attributeCount; i++)
 	{
 		cout<<"\n"<<(i+1)<<" : "<<attribute[i]<<" : "<<attributeValue[i];
 	}
