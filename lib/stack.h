@@ -37,6 +37,7 @@ class c_stack
 		c_stack(int x)
 		{
 			ch= new char[MAX_SIZE];
+			memset(ch, (int)'#',MAX_SIZE);
 			max=x;
 			top=-1;
 		}
@@ -57,7 +58,7 @@ int c_stack::push(char x)
 				return(-1);
 			}
 			top++;
-			ch[top]=x;
+			ch[top] = x;
 			return(top);
 		}
 char c_stack::pop(void)
@@ -68,14 +69,15 @@ char c_stack::pop(void)
 			return('\0');
 		}
 		top--;
-		return(ch[top]);
+		return(ch[top+1]);
 }
 void c_stack::dump(void)
 {
-	cout<<"\n::::::::::::::::::::Dumping stack::::::::::::::::::::\n";
-	for(int i=0;i<top;i++)
+	cout << "\n::::::::::::::::::::Dumping stack::::::::::::::::::::\n";
+	cout << "\ttop:" << top << "\tmax" << max << "\n" ;
+	for(int i=0;i<=top;i++)
 	{
-		cout<<ch[i]<<"\n";
+		cout << ch[i] <<"\n";
 	}
 	cout<<"\n::::::::::::::::::::Dumping over::::::::::::::::::::\n";
 }
