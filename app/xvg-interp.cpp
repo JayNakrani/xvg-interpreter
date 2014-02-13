@@ -22,13 +22,15 @@ int main(int argC, char *argV[])
 	c_tag tag;
 	usint  statusFlag=0;
 	ifstream iFile;
-	ofstream oFile;
 	int chCount=0,tagNameCount=0,attributeNameCount=0,attributeValueCount,attributeGlbCount=0;
 	char c='\0',tmpCh='\0',prevChar='\0';
 	char *tagName,*attributeName,*attributeValue;
 
+#ifdef _DEBUG_FLAG_
+	ofstream oFile;
 	time_t rawtime;
 	struct tm * timeinfo;
+#endif
 
 	/* Allocate memories */
 	attributeName = new char[MAXIMUM];
@@ -40,21 +42,29 @@ int main(int argC, char *argV[])
 		cout<<"\nTarget file missing..!!\nPlease enter relative path here:";
 		cin>>argV[1];
 	}
-	iFile.open(argV[1],ios::in);
-	oFile.open("log/log.txt",ios::out|ios::ate);
-	oFile<<"\n----------------------------------------------------------------------------------------------\n";
-	oFile<<"\nFile:"<<argV[1];
-	time ( &rawtime );
-	timeinfo = localtime ( &rawtime );
-	oFile<<"\nStarting time:"<<asctime(timeinfo)<<"\t(in milliseconds from 1st January,1971 : "<<rawtime<<")";
-	
+
+
+	#ifdef _DEBUG_FLAG_	
+		iFile.open(argV[1],ios::in);
+		oFile.open("log/log.txt",ios::out|ios::ate);
+		oFile<<"\n----------------------------------------------------------------------------------------------\n";
+		oFile<<"\nFile:"<<argV[1];
+		time ( &rawtime );
+		timeinfo = localtime ( &rawtime );
+		oFile<<"\nStarting time:"<<asctime(timeinfo)<<"\t(in milliseconds from 1st January,1971 : "<<rawtime<<")";
+	#endif
+
+
 	if(!iFile.is_open())
 	{
 		cout<<"\nError::Could not open target file";
 		exit(1);
 	}
 	
+	
 	initG();
+
+
 	while(!iFile.eof())
 	{
 		prevChar=c;
@@ -66,7 +76,7 @@ int main(int argC, char *argV[])
 			{
 				case '<':
 					endSymbStack.push(c);
-					if(iFile.peek()!='/')
+					if(iFile.peek() != '/')
 					{
 						statusFlag=1;
 					}
@@ -77,15 +87,20 @@ int main(int argC, char *argV[])
 					break;
 				case '>':
 					tmpCh=endSymbStack.pop();
-					if(prevChar!=c)
+					if(prevChar != c)
 					{
 						if(tmpCh=='\0')
 						{
-							//cout<<"\nError (code 0)\nAt char:"<<chCount<<"\n";
-							oFile<<"\n\t\t\tError (code 0)\nAt char:"<<chCount<<"\n";
+							cout<<"\nError (code 0)\nAt char:"<<chCount<<"\n";
 						}
 					}
-					draw(&tag,&oFile);
+
+					#ifdef _DEBUG_FLAG_
+						draw(&tag,&oFile);
+					#else
+						draw(&tag);
+					#endif
+
 					attributeGlbCount=0;
 					statusFlag=0;
 					break;
@@ -154,13 +169,18 @@ int main(int argC, char *argV[])
 		}
 
 	}
-	oFile<<"\n\t\tTotal characters in file:"<<chCount;
-	time ( &rawtime );
-	timeinfo = localtime ( &rawtime );
-	oFile<<"\nEnding time:"<<asctime(timeinfo)<<"\t(in milliseconds from 1st January,1971 : "<<rawtime<<")";
-	oFile<<"\n----------------------------------------------------------------------------------------------\n";
-	iFile.close();
-	oFile.close();
+
+	/* Debugging code. */
+	#ifdef _DEBUG_FLAG_	
+		oFile<<"\n\t\tTotal characters in file:"<<chCount;
+		time ( &rawtime );
+		timeinfo = localtime ( &rawtime );
+		oFile<<"\nEnding time:"<<asctime(timeinfo)<<"\t(in milliseconds from 1st January,1971 : "<<rawtime<<")";
+		oFile<<"\n----------------------------------------------------------------------------------------------\n";
+		iFile.close();
+		oFile.close();
+	#endif
+
 	getch();
 	closegraph();
 	return(0);

@@ -51,8 +51,11 @@ void initG(void)
 	// }
 }
 
-
-uint draw(c_tag *tagPtr,ofstream *oFile)
+#ifdef _DEBUG_FLAG_
+	uint draw(c_tag *tagPtr,ofstream *oFile)
+#else
+	uint draw(c_tag *tagPtr)
+#endif
 {
 	char strValue[MAX_LEN];
 	usint allIsWell=0;			//flag stating if allIsWell or not, initially its not
