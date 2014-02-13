@@ -29,6 +29,11 @@ int main(int argC, char *argV[])
 
 	time_t rawtime;
 	struct tm * timeinfo;
+
+	/* Allocate memories */
+	attributeName = new char[MAXIMUM];
+	tagName = new char[MAXIMUM];
+	attributeValue = new char[MAXIMUM];
 	
 	if(argC<2)
 	{
@@ -36,7 +41,7 @@ int main(int argC, char *argV[])
 		cin>>argV[1];
 	}
 	iFile.open(argV[1],ios::in);
-	oFile.open("log.txt",ios::out|ios::ate);
+	oFile.open("log/log.txt",ios::out|ios::ate);
 	oFile<<"\n----------------------------------------------------------------------------------------------\n";
 	oFile<<"\nFile:"<<argV[1];
 	time ( &rawtime );
