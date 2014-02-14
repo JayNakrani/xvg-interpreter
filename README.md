@@ -5,15 +5,16 @@ Interpreter for xvg (Xml Vector Graphics) files.
 
 Takes XVG (Minimal version of SVG) file as a input and generated graphics in a separate window.
 
+Please look into `/testing/` to see some example of xvg files.
 
-Run it as : xvg-interp <XVG file as input>
+Run it as : ```xvg-interp <path to XVG file as input>```
 
 
+===============
+<h2>Requirement:</h2>
 
-Requirement:
-
-Windows:
+<b>Windows</b>:
   No extra requirement for windows system as they have DOS graphics support.
   
-Ubuntu
-  Need libgraph1.2.0 or higher.
+<b>Ubuntu</b> :
+  Needs libgraph1.2.0 or higher.
