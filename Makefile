@@ -2,10 +2,11 @@
 all : xvg-interp
 
 CC = g++
-FLAGS = -O3 -g
+FLAGS = -O3 -lgraph
+OUT_DIR= ./bin
 
 xvg-interp : 
-	$(CC) $(FLAGS) -o bin/xvg-interp app/xvg-interp.cpp -lgraph
+	$(CC) -o $(OUT_DIR)/xvg-interp app/xvg-interp.cpp $(FLAGS)
 
 clean :
-	rm bin/xvg-interp
+	rm $(OUT_DIR)/xvg-interp
