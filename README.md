@@ -5,7 +5,7 @@ Interpreter for xvg (Xml Vector Graphics) files.
 
 Takes XVG (Minimal version of SVG) file as a input and generated graphics in a separate window.
 
-Please look into `/testXVG/` to see some example of xvg files.
+Please look into `/examples/` to see some example of xvg files.
 
 Run it as : ```xvg-interp <path to XVG file as input>```
 
