@@ -1,5 +1,5 @@
-#include "config.h"
-#include "stack.h"
+#include "../lib/config.h"
+#include "../lib/stack.h"
 
 int main(void)
 {
