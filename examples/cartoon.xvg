@@ -31,6 +31,4 @@
 	<line x1="380" y1="260" x2="370" y2="230" color="11" comment="Right \ for A">
 	<line x1="365" y1="245" x2="375" y2="245" color="11" comment="left | for A">
 
-	<ellipse end="320" color="11" x="150" y="150" rx="150" ry="200" start="0" >
-	<circle x="100" y="300" color="12" r="50">
 </xvg>
