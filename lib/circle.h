@@ -44,7 +44,6 @@ void c_circle::setCenter(int x,int y)
 void c_circle::setRadius(uint x)
 {
 	r=x;
-	cout << c.getX() << "  " << c.getY();
 }
 uint c_circle::getRadius(void)
 {
