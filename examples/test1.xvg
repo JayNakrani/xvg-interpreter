@@ -7,5 +7,5 @@
 	<point x="50" y="62" color="9">
 	<point x="50" y="63" color="9">
 	<circle r="80" x="150" y="150" color="7">
-	<rect top="160" bottom="300" left="80" right="340" color="46">
+	<rect top="160" bottom="300" left="80" color="46" right="340">
 </xvg>
